@@ -1,0 +1,523 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>css basic</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    />
+    <style>
+      body {
+        font-family: "Segoe UI", sans-serif;
+        background-color: #f0f0f0;
+        padding: 40px;
+      }
+
+      h1 {
+        text-align: center;
+        margin-bottom: 40px;
+        color: #333;
+      }
+      h2 {
+        font-size: 2rem;
+        overflow: hidden;
+      }
+
+      h2:after {
+        content: "";
+        display: inline-block;
+        height: 0.5em;
+        vertical-align: bottom;
+        width: 100%;
+        margin-right: -100%;
+        margin-left: 10px;
+        border-top: 1px solid black;
+      }
+      .bookmark-container {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 20px;
+        justify-content: center;
+      }
+
+      .bookmark {
+        background-color: #ffffff;
+        border-radius: 10px;
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        padding: 25px 30px;
+        min-width: 220px;
+        text-align: left;
+        font-size: 1.2em;
+        transition: transform 0.2s, box-shadow 0.2s;
+        text-decoration: none;
+        color: #333;
+        display: flex;
+        align-items: center;
+        gap: 15px;
+      }
+
+      .bookmark:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+        background-color: #f9f9f9;
+      }
+      .bookmark-news {
+        border-left: 5px solid #e74c3c;
+      }
+      .bookmark-youtube {
+        border-left: 5px solid #c4302b;
+      }
+      .bookmark-facebook {
+        border-left: 5px solid #3b5998;
+      }
+      .bookmark i {
+        font-size: 1.4em;
+        width: 25px;
+      }
+
+      .bookmark-container2 {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 30px;
+      }
+
+      .bookmark-button {
+        display: inline-flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 100px;
+        height: 100px;
+        background-color: #fff;
+        color: #333;
+        text-decoration: none;
+        border-radius: 15px;
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+        transition: transform 0.2s, box-shadow 0.2s;
+        font-size: 1.1em;
+      }
+
+      .bookmark-button:hover {
+        transform: translateY(-4px);
+        box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+        background-color: #f9f9f9;
+      }
+
+      .bookmark-button i {
+        font-size: 2.5em;
+      }
+
+      .news {
+        color: #e74c3c;
+      }
+      .youtube {
+        color: #c4302b;
+      }
+      .facebook {
+        color: #3b5998;
+      }
+      #container {
+        background-color: #bdc3c6;
+        padding: 30px;
+        width: 300px;
+        margin: 50px auto;
+        box-shadow: 0 0 15px rgba(0, 0, 0, 2);
+      }
+
+      .box {
+        display: inline-block;
+        width: 50px;
+        height: 50px;
+        border: 1px solid #000000;
+        margin-right: 10px;
+        margin-bottom: 20px;
+      }
+
+      #first {
+        background-color: #1abb9c;
+      }
+
+      #second {
+        background-color: #e67e22;
+      }
+
+      .prompt {
+        font-weight: bold;
+        margin: 10px 0 5px;
+        color: #333;
+      }
+
+      input[type="text"],
+      input[type="number"] {
+        width: 100%;
+        padding: 8px;
+        border: 2px solid #aaa;
+        border-radius: 6px;
+        margin-bottom: 15px;
+        box-shadow: inset 1px 1px 3px rgba(0, 0, 0, 0.1);
+      }
+
+      .button {
+        background-color: #2ecc71;
+        border: none;
+        padding: 10px 20px;
+        border-radius: 5px;
+        font-weight: bold;
+        box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+        cursor: pointer;
+        width: 100%;
+        transition: background-color 0.3s;
+      }
+
+      .button:hover {
+        background-color: #ffaa00;
+      }
+      table {
+        width: 100%;
+        max-width: 900px;
+        margin: auto;
+        border-collapse: collapse;
+        background-color: white;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      }
+      h3 {
+        text-align: center;
+        font-size: 2em;
+        color: #333;
+        margin-bottom: 20px;
+      }
+      caption {
+        caption-side: top;
+        font-size: 1.3em;
+        margin-bottom: 10px;
+        font-weight: bold;
+        color: #007acc;
+      }
+
+      th,
+      td {
+        padding: 12px;
+        text-align: center;
+        border-bottom: 1px solid #ddd;
+      }
+
+      th {
+        background-color: #007acc;
+        color: white;
+      }
+
+      tr:nth-child(even) {
+        background-color: #f9f9f9;
+      }
+
+      tr:hover {
+        background-color: #f1f1f1;
+      }
+
+      .team {
+        text-align: left;
+        padding-left: 10px;
+      }
+      img {
+        width: 100%;
+        max-width: 600px;
+        display: block;
+        margin: 20px auto;
+        border-radius: 10px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      }
+
+      ul {
+        padding-left: 20px;
+      }
+
+      a {
+        color: #c0392b;
+        text-decoration: none;
+      }
+
+      .section {
+        margin-bottom: 30px;
+      }
+      #container2 {
+        margin: 0;
+        padding: 0;
+        background: url("https://images.unsplash.com/photo-1506744038136-46273834b3fb")
+          no-repeat center center fixed;
+        background-size: cover;
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        font-family: "Segoe UI", sans-serif;
+      }
+
+      #container2 h1.transparent-title {
+        font-size: 3em;
+        color: rgba(13, 229, 229, 0.3);
+        background-color: rgba(211, 9, 120, 0.1); /* element transparent */
+        border: 2px dashed rgba(255, 255, 255, 0.3);
+        padding: 20px 40px;
+      }
+
+      #container2 h1.opaque-title {
+        font-size: 3em;
+        color: white;
+        background-color: #2b3d36; /* fully opaque */
+        padding: 20px 40px;
+        box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+        border-radius: 10px;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Basic CSS</h1>
+
+    <div>
+      <h2>Excersie 1</h2>
+      <p
+        style="font-size: 24px; color: crimson; font-family: Arial, sans-serif"
+      >
+        This is the first line — bold and red in Arial!
+      </p>
+
+      <p
+        style="
+          font-size: 20px;
+          color: seagreen;
+          font-family: 'Courier New', monospace;
+        "
+      >
+        This is the second line — classic green in Courier New.
+      </p>
+
+      <p
+        style="font-size: 18px; color: steelblue; font-family: 'Georgia', serif"
+      >
+        This is the third line — elegant blue in Georgia.
+      </p>
+    </div>
+    <div>
+      <h2>Excersie 2</h2>
+
+      <div class="bookmark-container">
+        <a
+          href="https://www.ynet.co.il"
+          target="_blank"
+          class="bookmark bookmark-news"
+        >
+          <i class="fas fa-newspaper"></i> Ynet
+        </a>
+        <a
+          href="https://www.youtube.com"
+          target="_blank"
+          class="bookmark bookmark-youtube"
+        >
+          <i class="fab fa-youtube"></i> YouTube
+        </a>
+        <a
+          href="https://www.facebook.com"
+          target="_blank"
+          class="bookmark bookmark-facebook"
+        >
+          <i class="fab fa-facebook-f"></i> Facebook
+        </a>
+      </div>
+      <div>
+        <h2>Excersie 3</h2>
+
+        <div class="bookmark-container2">
+          <a
+            href="https://www.ynet.co.il"
+            target="_blank"
+            class="bookmark-button news"
+          >
+            <i class="fas fa-newspaper"></i>
+          </a>
+          <a
+            href="https://www.youtube.com"
+            target="_blank"
+            class="bookmark-button youtube"
+          >
+            <i class="fab fa-youtube"></i>
+          </a>
+          <a
+            href="https://www.facebook.com"
+            target="_blank"
+            class="bookmark-button facebook"
+          >
+            <i class="fab fa-facebook-f"></i>
+          </a>
+        </div>
+      </div>
+      <div>
+        <h2>Excersie 4</h2>
+        <div id="container">
+          <span class="box" id="first"></span>
+          <span class="box" id="second"></span>
+          <div class="prompt">Name:</div>
+          <input type="text" placeholder="Your name" />
+          <div class="prompt">Age:</div>
+          <input type="number" placeholder="How old?" />
+          <button class="button">Win</button>
+        </div>
+      </div>
+      <div>
+        <h2>Excersie 5</h2>
+        <h3>Israeli Premier League</h3>
+
+        <table>
+          <caption>
+            2024/2025 Season Standings
+          </caption>
+          <thead>
+            <tr>
+              <th>#</th>
+              <th class="team">Team</th>
+              <th>MP</th>
+              <th>W</th>
+              <th>D</th>
+              <th>L</th>
+              <th>GF</th>
+              <th>GA</th>
+              <th>GD</th>
+              <th>Pts</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>1</td>
+              <td class="team">Maccabi Tel Aviv</td>
+              <td>30</td>
+              <td>21</td>
+              <td>6</td>
+              <td>3</td>
+              <td>65</td>
+              <td>25</td>
+              <td>+40</td>
+              <td>69</td>
+            </tr>
+            <tr>
+              <td>2</td>
+              <td class="team">Hapoel Be'er Sheva</td>
+              <td>30</td>
+              <td>18</td>
+              <td>8</td>
+              <td>4</td>
+              <td>55</td>
+              <td>30</td>
+              <td>+25</td>
+              <td>62</td>
+            </tr>
+            <tr>
+              <td>3</td>
+              <td class="team">Maccabi Haifa</td>
+              <td>30</td>
+              <td>17</td>
+              <td>9</td>
+              <td>4</td>
+              <td>58</td>
+              <td>29</td>
+              <td>+29</td>
+              <td>60</td>
+            </tr>
+            <tr>
+              <td>4</td>
+              <td class="team">Bnei Sakhnin</td>
+              <td>30</td>
+              <td>14</td>
+              <td>7</td>
+              <td>9</td>
+              <td>40</td>
+              <td>33</td>
+              <td>+7</td>
+              <td>49</td>
+            </tr>
+            <tr>
+              <td>5</td>
+              <td class="team">Beitar Jerusalem</td>
+              <td>30</td>
+              <td>13</td>
+              <td>6</td>
+              <td>11</td>
+              <td>42</td>
+              <td>38</td>
+              <td>+4</td>
+              <td>45</td>
+            </tr>
+            <!-- Add more teams as needed -->
+          </tbody>
+        </table>
+      </div>
+      <div>
+        <h2>Excersie 6</h2>
+        <h1>Delicious Shakshuka</h1>
+
+        <img
+          src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/18/Shakshuka_by_Calliopejen1.jpg/250px-Shakshuka_by_Calliopejen1.jpg"
+          alt="Shakshuka in a pan"
+        />
+
+        <div class="section">
+          <h3 style="text-align: left">Ingredients</h3>
+          <ul>
+            <li>2 tbsp olive oil</li>
+            <li>1 onion, diced</li>
+            <li>1 red bell pepper, chopped</li>
+            <li>2 cloves garlic, minced</li>
+            <li>1 tsp ground cumin</li>
+            <li>1 tsp paprika</li>
+            <li>1/4 tsp chili flakes (optional)</li>
+            <li>1 can (400g) crushed tomatoes</li>
+            <li>4–6 eggs</li>
+            <li>Salt & pepper to taste</li>
+            <li>Fresh parsley or cilantro for garnish</li>
+            <li>Crusty bread for serving</li>
+          </ul>
+        </div>
+
+        <div class="section">
+          <h3 style="text-align: left">Instructions</h3>
+          <ol>
+            <li>
+              Heat olive oil in a pan over medium heat. Add onion and bell
+              pepper, cook until soft (about 5 minutes).
+            </li>
+            <li>
+              Stir in garlic and spices. Cook for another minute until fragrant.
+            </li>
+            <li>
+              Pour in crushed tomatoes, reduce heat, and simmer for 10 minutes
+              until thickened.
+            </li>
+            <li>Make small wells in the sauce and crack the eggs into them.</li>
+            <li>
+              Cover the pan and cook for 5–7 minutes until eggs are just set.
+            </li>
+            <li>
+              Season with salt, pepper, and garnish with parsley or cilantro.
+            </li>
+            <li>Serve hot with bread.</li>
+          </ol>
+        </div>
+
+        <div class="section">
+          <p>
+            Want to learn more? Visit
+            <a href="https://en.wikipedia.org/wiki/Shakshouka" target="_blank"
+              >Shakshuka on Wikipedia</a
+            >.
+          </p>
+        </div>
+      </div>
+      <h2>Excersie 7</h2>
+      <div id="container2">
+        <h1 class="transparent-title">This is Transparent</h1>
+        <h1 class="opaque-title">This is Opaque</h1>
+      </div>
+    </div>
+  </body>
+</html>
