@@ -1,2 +1,2 @@
-h1{color: aqua;}
-.paragraph{border-bottom: 1px red;}
+h2 { color: blue; }
+h2:hover { color: red; }
