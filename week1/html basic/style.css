@@ -31,6 +31,8 @@ p {
 
 .galery img {
   background-size: contain;
+  max-width: 100%;
+  height: auto;
 }
 
 .text-muted {
@@ -62,10 +64,13 @@ form {
   padding: 20px;
   border-radius: 10px;
   background: #f9f9f9;
+  width: 50%;
+  margin: auto;
 }
 
 fieldset {
   border: 2px solid #71b7e6;
+  background-color: #71b7e629;
   margin-bottom: 20px;
   border-radius: 10px;
 }
