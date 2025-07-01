@@ -1,0 +1,167 @@
+h2 {
+  font-size: 2rem;
+  overflow: hidden;
+}
+
+h2:after {
+  content: "";
+  display: inline-block;
+  height: 0.5em;
+  vertical-align: bottom;
+  width: 100%;
+  margin-right: -100%;
+  margin-left: 10px;
+  border-top: 1px solid black;
+}
+
+/* EXERCISE 1 */
+
+.ex1 {
+  position: relative;
+  width: 50vw;
+  height: auto;
+  margin: auto;
+}
+.ex1 img {
+  width: 100%;
+  height: 100%;
+}
+.ex1 p {
+  position: absolute;
+  color: #000;
+  font-size: 30px;
+  margin: 0;
+}
+
+.text1 {
+  top: 0;
+  left: 0;
+}
+.text2 {
+  top: 0;
+  right: 0;
+}
+.text3 {
+  bottom: 0;
+  left: 0;
+}
+.text4 {
+  bottom: 0;
+  right: 0;
+}
+
+/* EXERCISE 2 */
+
+.ex2 {
+  position: relative;
+  width: 20vw;
+  height: 20vh;
+  margin: auto;
+  background-color: blue;
+}
+.ex2 .child {
+  position: absolute;
+  background-color: red;
+}
+.child#child-1 {
+  width: 100%;
+  height: 5%;
+  top: 10%;
+  left: 0;
+}
+.child#child-2 {
+  width: 5%;
+  height: 100%;
+  top: 0;
+  left: 10%;
+}
+
+/* EXERCISE 3 */
+
+.ex3 {
+  position: relative;
+  width: 40vw;
+  height: 20vh;
+  margin: auto;
+  background-color: #6c5ce7;
+  border-radius: 10px;
+}
+.ex3 .text {
+  position: absolute;
+  color: #000;
+  font-size: 30px;
+  margin: 10px;
+}
+#money {
+  top: 0;
+  left: 0;
+}
+
+#time {
+  bottom: 0;
+  right: 0;
+}
+.bar {
+  position: absolute;
+  width: 5%;
+  bottom: 10px;
+  background-color: #dfe6e9;
+}
+.bar#bar-1 {
+  height: 10%;
+  left: 10%;
+}
+.bar#bar-2 {
+  height: 60%;
+  left: 20%;
+}
+.bar#bar-3 {
+  height: 90%;
+  left: 30%;
+}
+.bar#bar-4 {
+  height: 80%;
+  left: 40%;
+}
+.bar#bar-5 {
+  height: 70%;
+  left: 50%;
+}
+.bar#bar-6 {
+  height: 30%;
+  left: 60%;
+}
+
+/* EXERCISE 4 */
+
+.ex4 {
+  position: relative;
+  width: 30rem;
+  height: 20rem;
+  margin: auto;
+  background-color: red;
+  border-radius: 10px;
+}
+.white {
+  position: absolute;
+  width: 50%;
+  height: 70%;
+  left: 25%;
+  background-color: #fff;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+.grey  {
+  position: absolute;
+  width: 25%;
+  height: 25%;
+  background-color: grey;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+#grey-1 {
+  left: 0;
+}
+#grey-2 {
+  right: 0;
+}
