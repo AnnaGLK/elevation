@@ -1,3 +1,8 @@
+h1 {
+  font-size: 3rem;
+  text-align: center;
+  margin-top: 20px;
+}
 h2 {
   font-size: 2rem;
   overflow: hidden;
@@ -12,6 +17,11 @@ h2:after {
   margin-right: -100%;
   margin-left: 10px;
   border-top: 1px solid black;
+}
+.container {
+  width: 90%;
+  margin: 0 auto;
+
 }
 
 /* EXERCISE 1 */
