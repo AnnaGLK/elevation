@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="https://kit.fontawesome.com/74008959fa.js" crossorigin="anonymous"></script>
+  </head>
+  <header class="container">
+    <h2>John Doe</h2>
+    <nav>
+      <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <body>
+    <div id="home">
+      <div class="container hero">
+        <div class="hero-text w-50 mx-auto text-center">
+          <h2 class="text-4xl font-bold text-gray-900 mb-4">
+            Full-Stack Developer
+          </h2>
+          <p class="text-gray-600 mb-6">
+            I create beautiful and functional web experiences using modern
+            technologies. Passionate about clean code and user-centered design.
+          </p>
+          <a
+            href="#contact"
+            class="bg-blue-600 text-white px-6 py-2 rounded hover:bg-blue-700"
+            >Get in Touch</a
+          >
+        </div>
+
+        <div class="hero-img w-50 mx-auto text-center">
+          <img
+            src="https://emojiguide.com/wp-content/uploads/2021/08/AdobeStock_209872281-1024x704.jpeg"
+            alt="Anna Glikin"
+            class="rounded-full w-32 h-32 mb-4"
+          />
+        </div>
+      </div>
+    </div>
+    <div id="about">
+      <div class="container">
+        <div class="w-50">
+          <h2>About Me</h2>
+          <p>
+            I’m a passionate full-stack developer with a keen eye for design and
+            a love for creating seamless user experiences. With expertise in
+            HTML, CSS, and JavaScript, I bring ideas to life through clean,
+            efficient code. When I’m not coding, you can find me exploring new
+            technologies, reading design blogs, or enjoying a good cup of coffee
+            while sketching out new project ideas.
+          </p>
+        </div>
+        <div></div>
+      </div>
+    </div>
+    <div id="projects">
+      <div class="container">
+        <h2>My Projects</h2>
+        <div class="project-list">
+          <div class="project-item">
+            <img
+              src="https://emojiguide.com/wp-content/uploads/2021/08/AdobeStock_209872281-1024x704.jpeg"
+              alt="Project 1"
+              class="project-image"
+            />
+            <h3>E-commerce Website</h3>
+            <p>
+              A responsive online store built with HTML, CSS, and JavaScript
+              featuring product catalog and shopping cart.
+            </p>
+            <a
+              href="#"
+              class="bg-orange-600 text-white px-4 py-2 rounded hover:bg-orange-700"
+              >View Project</a
+            >
+          </div>
+          <div class="project-item">
+            <img
+              src="https://emojiguide.com/wp-content/uploads/2021/08/AdobeStock_209872281-1024x704.jpeg"
+              alt="Project 2"
+              class="project-image"
+            />
+            <h3>Weather App</h3>
+            <p>
+              A clean weather application that displays current conditions and
+              forecasts with a beautiful interface.
+            </p>
+            <a
+              href="#"
+              class="bg-orange-600 text-white px-4 py-2 rounded hover:bg-orange-700"
+              >View Project</a
+            >
+          </div>
+          <div class="project-item">
+            <img
+              src="https://emojiguide.com/wp-content/uploads/2021/08/AdobeStock_209872281-1024x704.jpeg"
+              alt="Project 3"
+              class="project-image"
+            />
+            <h3>Task Manager</h3>
+            <p>
+              A productivity app for managing daily tasks with drag-and-drop
+              functionality and local storage.
+            </p>
+            <a
+              href="#"
+              class="bg-orange-600 text-white px-4 py-2 rounded hover:bg-orange-700"
+              >View Project</a
+            >
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="contact">
+      <div class="container">
+        <h3>GET IN TOUCH</h3>
+        <div class="contact-info">
+          <div class="contact-form w-50">
+            <form action="#" method="post">
+              <label for="name">Name:</label>
+              <input type="text" id="name" name="name" required />
+              <label for="email">Email:</label>
+              <input type="email" id="email" name="email" required />
+              <label for="message">Message:</label>
+              <textarea
+                id="message"
+                name="message"
+                rows="4"
+                required
+              ></textarea>
+              <button
+                type="submit"
+                class="bg-blue-600 text-white px-6 py-2 rounded hover:bg-blue-700"
+              >
+                Send Message
+              </button>
+            </form>
+          </div>
+          <div class="contact-details w-50">
+            <h4>Contact Details</h4>
+           
+              <p>
+                Email:
+                <a href="mailto:john.doe@email.com">john.doe@email.com</a>
+              </p>
+              <p>Phone: <a href="tel:+1234567890">+1 (555) 123-4567</a></p>
+              <p>
+                Address:
+                <a
+                  href="https://www.google.com/maps/place/New+York,+NY,+USA"
+                  target="_blank"
+                  >New York, NY</a
+                >
+              </p>         
+            <div class="social-links">
+              <a href="#" target="_blank" class="social-link"
+                ><i class="fa-brands fa-linkedin-in"></i></a>
+              <a href="#" target="_blank" class="social-link"
+                ><i class="fa-brands fa-github"></i></a>
+              <a href="#" target="_blank" class="social-link"
+                ><i class="fa-brands fa-x-twitter"></i
+              ></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+
+  <footer>
+    <p>© 2025 Anna Glikin</p>
+  </footer>
+  <script src="script.js"></script>
+</html>

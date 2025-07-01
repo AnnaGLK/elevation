@@ -1,0 +1,115 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: Arial, sans-serif;
+  color: #1f2937;
+  font-size: 16px;
+  line-height: 1.6;
+  font-weight: 400;
+  background-color: #fff;
+}
+.container {
+  padding: 1rem 10vw;
+  width: 100%;
+}
+
+/* HEADER SECTION */
+
+header {
+  box-shadow: 0 4px 2px -2px gray;
+}
+header h2 {
+  font-size: 2em;
+  color: #3b82f6;
+  margin: 0;
+  display: inline-block;
+}
+
+nav {
+  display: flex;
+  text-decoration: none;
+  float: right;
+  margin-right: 10px;
+}
+ul {
+  justify-content: flex-end;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+li {
+  display: inline-block;
+}
+
+li a {
+  display: block;
+  padding: 8px;
+  text-decoration: none;
+  color: #1f2937;
+}
+
+/* HERO SECTION */
+
+#home,
+#projects {
+  background-color: #d8d8d8bd;
+}
+.hero {
+  display: flex;
+}
+.w-50 {
+  width: 50%;
+}
+.hero-img {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.hero-img > img{
+  width: 50%;
+  height: auto;
+  border-radius: 50%;
+}
+
+
+/* PROJECTS SECTION */
+
+
+.project-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.project-item {
+  background-color: #f3f4f6;
+  border-radius: 8px;
+  padding: 20px;
+  margin: 10px;
+  flex: 1 1 calc(33.333% - 20px);
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+.project-item img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+
+.contact-info {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 20px;
+}
+/* FOOTER SECTION */
+
+footer {
+  background-color: #1f2937;
+  color: white;
+  padding: 20px;
+  text-align: center;
+}
