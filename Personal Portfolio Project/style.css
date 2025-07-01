@@ -2,6 +2,11 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  
+}
+
+.w-50 {
+  width: 50%;
 }
 body {
   font-family: Arial, sans-serif;
@@ -22,6 +27,11 @@ header {
   box-shadow: 0 5px 5px 0px gray;
 }
 header > .container{ padding: 1rem 10vw;}
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
 .logo {
   font-size: 2em;
   color: #3b82f6;
@@ -59,12 +69,15 @@ li a {
 li a:hover, li a:focus, li a:active {
   color: #3b82f6;
 }
+
+
+
 /* HERO SECTION */
 
-#home,
-#projects {
-  background-color: #d8d8d8bd;
+#home {
+  background-color: #e5eaf1;
 }
+
 .hero {
   display: flex;
 }
@@ -83,7 +96,9 @@ li a:hover, li a:focus, li a:active {
 
 /* PROJECTS SECTION */
 
-
+#projects {
+  background-color: #f7fafc;
+}
 .project-list {
   display: flex;
   flex-wrap: wrap;
@@ -122,4 +137,5 @@ footer {
 /* MOBILE */
 
 @media (max-width: 600px) {
+
     }
