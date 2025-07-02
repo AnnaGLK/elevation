@@ -1,0 +1,203 @@
+h1 {
+  font-size: 3rem;
+  text-align: center;
+  margin-top: 20px;
+}
+h2 {
+  font-size: 2rem;
+  overflow: hidden;
+  margin: 50px 0;
+}
+
+h2:after {
+  content: "";
+  display: inline-block;
+  height: 0.5em;
+  vertical-align: bottom;
+  width: 100%;
+  margin-right: -100%;
+  margin-left: 10px;
+  border-top: 1px solid black;
+}
+.container {
+  width: 70%;
+  margin: 0 auto;
+}
+img {
+  width: 100%;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+}
+/* EXERCISE 2 */
+
+.flexbox1 {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+  border: grey 1px solid;
+}
+.flexbox1 div {
+  background-color: lightblue;
+  width: 20%;
+  height: 100px;
+  text-align: center;
+  line-height: 100px;
+  font-size: 2rem;
+  margin: 5px;
+}
+
+.flexbox1 > #child-2,
+.flexbox1 > #child-3 {
+  flex-grow: 2;
+}
+
+/* EXERCISE 3 */
+.flexbox2 {
+  display: flex;
+  height: 50%;
+  align-items: stretch;
+  justify-content: center;
+}
+.flexbox2 > div {
+  text-align: center;
+  border: #eee 1px solid;
+  width: 20%;
+  justify-content: center;
+  align-content: center;
+  padding: 0 20px;
+}
+.circle {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  background-color: lightblue;
+  margin: 0 auto;
+}
+.text {
+  font-size: 1rem;
+  line-height: 1.5;
+  text-align: left;
+}
+/* EXERCISE 4 */
+
+.flexbox3 {
+  display: flex;
+  border: 10px solid #e57373; /* red border */
+  height: 50%;
+  width: 50%;
+}
+
+#child-6 {
+  width: 20%;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: self-start;
+  padding: 0px 0 0 3%;
+  border-right: 10px solid #e57373;
+}
+
+.child {
+  width: 70%;
+  height: 15px;
+  background-color: #e57373;
+  margin: 5px 0;
+}
+#child-6 .child-3 {
+  width: 50%;
+}
+.main {
+  flex-grow: 1;
+  padding: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #003366;
+}
+
+.flexbox3 > .child-7 {
+  width: 90%;
+  align-content: center;
+  padding: 0 5%;
+}
+.child-7 > .text {
+  color: #555469;
+}
+
+/* EXERCISE 5 */
+.flexbox4 {
+  display: flex;
+  align-items: center;
+  padding: 3% 6%;
+  flex-direction: column;
+  height: auto;
+  width: 50%;
+  background: #ddd;
+}
+
+.flexbox4 .text {
+  font-size: 1rem;
+}
+
+#child-9 {
+  display: flex;
+  gap: 10px;
+  width: 100%;
+}
+
+.left {
+  width: 50%;
+  min-width: 50%;
+  height: 18rem;
+  background-color: #6495ed;
+}
+
+.right {
+  /* max-width: 50%; */
+  min-width: 50%;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.right > .box {
+  width: 48%;
+  height: auto;
+  background-color: #6495ed;
+}
+
+/* EXERCISE 6 */
+.flexbox5 {
+  display: flex;
+  flex-direction: column;
+  border: 10px solid #e57373;
+  height: auto;
+  width: 50%;
+}
+.flexbox5 > .top {
+  padding: 5%;
+}
+.circle.red {
+  background-color: #e57373;
+}
+.flexbox5 > .top > p.text {
+  text-align: center;
+}
+.flexbox5 > .bottom {
+  display: flex;
+  justify-content: end;
+  gap: 10px;
+  align-items: center;
+  padding: 5%;
+  border-top: 10px solid #e57373;
+}
+.flexbox5 > .bottom > .box {
+  width: 15%;
+  height: 20px;
+  background-color: #e57373;
+}
+.flexbox5 > .bottom > .box:first-child {
+  margin-right: auto;
+}
