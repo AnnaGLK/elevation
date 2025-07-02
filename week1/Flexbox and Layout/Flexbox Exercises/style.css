@@ -108,14 +108,14 @@ img {
 #child-6 .child-3 {
   width: 50%;
 }
-.main {
+/* .main {
   flex-grow: 1;
   padding: 40px;
   display: flex;
   justify-content: center;
   align-items: center;
   color: #003366;
-}
+} */
 
 .flexbox3 > .child-7 {
   width: 90%;
