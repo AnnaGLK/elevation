@@ -61,12 +61,12 @@ li {
 }
 li:last-child{margin-right: 0;}
 li a {
-  display: block;
-  padding: 8px;
+  display: inline-block;
+  padding: 10px;
   text-decoration: none;
   color: #6f7d93;
 }
-li a:hover, li a:focus, li a:active {
+li a:hover, li.active > a {
   color: #3b82f6;
 }
 
