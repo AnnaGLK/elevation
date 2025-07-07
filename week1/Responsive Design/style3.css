@@ -48,7 +48,6 @@ h2:after {
   width: 100%;
   object-fit: cover;
   height: 200px;
-  background-image: url("img_flowers.jpg");
   background-size: cover;
   border-radius: 5px;
 }
