@@ -38,33 +38,47 @@ h2:after {
   display: flex;
   flex-wrap: wrap;
   /* gap:10px; */
-   justify-content: center;
+  /* justify-content: center; */
 }
-.img-responsive{
+.img-responsive {
   width: 25%;
-      padding: 1%;
+  padding: 1%;
 }
-.img-responsive img{
+.img-responsive img {
   width: 100%;
   object-fit: cover;
-  height: 300px;
-  background-image: url('img_flowers.jpg');
+  height: 200px;
+  background-image: url("img_flowers.jpg");
   background-size: cover;
+  border-radius: 5px;
 }
-.img-responsive p{
+.img-responsive p {
+  color: #fff;
+  font-weight: 600;
+  font-size: larger;
+  text-transform: capitalize;
   position: relative;
+  bottom: 20%;
+  background: #13121c70;
+  padding-left: 5%;
 }
 /* ------------------------------Tablet--------------------------- */
 @media (min-width: 601px) and (max-width: 900px) {
   /* CSS */
-  .img-responsive{
-  width: 50%;
+  .img-responsive {
+    width: 50%;
+  }
+  .img-responsive p {
+  font-size:medium;
 }
 }
 /* ------------------------------MOBILE--------------------------- */
 
 @media only screen and (max-width: 600px) {
-  .img-responsive{
-  width: 100%;
+  .img-responsive {
+    width: 100%;
+  }
+    .img-responsive p {
+  font-size:small;
 }
 }
