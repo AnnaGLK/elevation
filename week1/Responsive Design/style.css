@@ -1,0 +1,83 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f5f7fa;
+  color: #333;
+}
+h2 {
+  font-size: 2rem;
+  overflow: hidden;
+  padding: 10px 0px;
+}
+
+h2:after {
+  content: "";
+  display: inline-block;
+  height: 0.5em;
+  vertical-align: bottom;
+  width: 100%;
+  margin-right: -100%;
+  margin-left: 10px;
+  border-top: 1px solid black;
+}
+.container {
+  max-width: 1000px;
+  margin: auto;
+}
+
+/* exercise 1 */
+.containerEx1 .box {
+  max-width: 300px;
+  height: 200px;
+  background-color: blue;
+}
+
+/* exercise 2 */
+.ex2 {
+  background-color: antiquewhite;
+  border-radius: 5px;
+  padding: 2%;
+  text-align: center;
+}
+h1 {
+  font-size: 48px;
+}
+p {
+  font-size: 18px;
+}
+/* ------------------------------Tablet--------------------------- */
+@media (min-width: 601px) and (max-width: 900px) {
+  /* CSS */
+  h1 {
+    font-size: 36px;
+  }
+  p {
+    font-size: 16px;
+  }
+}
+/* ------------------------------MOBILE--------------------------- */
+/* exercise 1 */
+
+@media only screen and (max-width: 768px) {
+  .containerEx1 .box {
+    max-width: 100%;
+    background-color: red;
+  }
+}
+@media only screen and (max-width: 600px) {
+  .containerEx1 .box {
+    max-width: 100%;
+    background-color: red;
+  }
+  h1 {
+    font-size: 24px;
+  }
+  p {
+    font-size: 14px;
+  }
+}
