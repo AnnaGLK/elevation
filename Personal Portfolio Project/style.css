@@ -2,18 +2,24 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  
 }
 
-.w-50 {
-  width: 50%;
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: #414b5c;
+  padding-bottom: 2%;
 }
+
 body {
   font-family: Arial, sans-serif;
   color: #6f7d93;
   font-size: 16px;
   line-height: 1.6;
-  font-weight: 600;
+  font-weight: 400;
   background-color: #fff;
 }
 .container {
@@ -26,7 +32,9 @@ body {
 header {
   box-shadow: 0 5px 5px 0px gray;
 }
-header > .container{ padding: 1rem 10vw;}
+header > .container {
+  padding: 1rem 10vw;
+}
 .header {
   display: flex;
   justify-content: space-between;
@@ -40,12 +48,13 @@ header > .container{ padding: 1rem 10vw;}
   text-decoration: none;
   font-weight: bold;
 }
-
+.burger {
+  display: none;
+}
 nav {
   display: flex;
   text-decoration: none;
   float: right;
-  
 }
 ul {
   justify-content: flex-end;
@@ -59,18 +68,19 @@ li {
   display: inline-block;
   margin: 0 5px;
 }
-li:last-child{margin-right: 0;}
+li:last-child {
+  margin-right: 0;
+}
 li a {
   display: inline-block;
   padding: 10px;
   text-decoration: none;
   color: #6f7d93;
 }
-li a:hover, li.active > a {
+li a:hover,
+li.active > a {
   color: #3b82f6;
 }
-
-
 
 /* HERO SECTION */
 
@@ -81,49 +91,138 @@ li a:hover, li.active > a {
 .hero {
   display: flex;
 }
-
+.hero-text {
+  width: 50%;
+}
 .hero-img {
+  width: 50%;
   display: flex;
   justify-content: center;
   align-items: center;
 }
-.hero-img > img{
+.hero-img > img {
   width: 50%;
   height: auto;
   border-radius: 50%;
 }
 
+/* About  SECTION */
+#about .container {
+  display: flex;
+}
+.about-content {
+  width: 60%;
+  padding-right: 5%;
+}
+h6 {
+  padding-bottom: 2%;
+  font-size: 1.1em;
+}
+.about-progress {
+  display: flex;
+  flex-direction: column;
+  width: 40%;
+  /* width: 30%; */
+}
+.bar {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  padding-bottom: 2%;
+}
+.bar1 .progress-fill {
+  width: 90%;
+}
+.bar2 .progress-fill {
+  width: 75%;
+}
+.bar3 .progress-fill {
+  width: 60%;
+}
+.bar4 .progress-fill {
+  width: 30%;
+}
+.progress-bar {
+  width: 50%;
+  background-color: #e9ecef;
+  border-radius: 4px;
+  overflow: hidden;
+  margin: 0.5rem 0;
+  /* justify-content: flex-end; */
+  align-items: flex-end;
+}
+
+.progress-fill {
+  /* width: 75%; */
+  height: 10px;
+  background-color: #3b82f6;
+  border-radius: 4px;
+  transition: width 0.3s ease;
+}
 
 /* PROJECTS SECTION */
 
 #projects {
   background-color: #f7fafc;
+  /* text-align: center; */
 }
+#projects h2 {
+  text-align: center;
+}
+
 .project-list {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-}
-.project-item {
-  background-color: #f3f4f6;
-  border-radius: 8px;
   padding: 20px;
-  margin: 10px;
-  flex: 1 1 calc(33.333% - 20px);
-  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
 }
-.project-item img {
+.product {
+  display: flex;
+  flex-direction: column;
+  width: 30%;
+  /* border: 2px solid red; */
+}
+.content {
   width: 100%;
-  height: auto;
-  border-radius: 8px;
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 0px 0px 10px 10px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+.product-img {
+  width: 100%;
+  border-radius: 10px 10px 0px 0px;
+}
+.product-img > a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+.product-img > a > img {
+  width: 100%;
+  height: 160px;
+  border-radius: 5px;
 }
 
-.contact-info {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  margin-top: 20px;
+.button {
+  display: block;
+  width: 40%;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  background-image: linear-gradient(
+    90deg,
+    #657de8 0%,
+    #4969f5 50%,
+    #3b82f6 100%
+  );
+  padding: 10px;
+  text-decoration: none;
+  text-align: center;
+  margin-top: 5%;
 }
+
 /* FOOTER SECTION */
 
 footer {
@@ -133,9 +232,40 @@ footer {
   text-align: center;
 }
 
+/* ------------------------------MOBILE--------------------------- */
 
-/* MOBILE */
-
-@media (max-width: 600px) {
-
-    }
+@media only screen and (max-width: 600px) {
+  .burger {
+    display: block;
+  }
+  .header nav {
+    display: none;
+  }
+  .header > .burger:hover nav {
+    display: flex;
+    width: 100vw;
+    height: 100vh;
+    flex-direction: column;
+  }
+  /* HERO */
+  .hero,
+  #about .container {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+  .hero-text, .hero-img, .about-content,.about-progress {
+    width: 80%;
+}
+.hero-img, .about-progress {padding-top: 5%;}
+  .product {
+    width: 100%;
+    padding-bottom: 5%;
+  }
+  .button {
+    width: 100%;
+    
+  }
+  .about-content{padding-right: 0;}
+}
