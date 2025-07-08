@@ -207,7 +207,7 @@ h6 {
 
 .button {
   display: block;
-  width: 40%;
+  /* width: 40%; */
   color: #fff;
   border: none;
   border-radius: 5px;
@@ -221,6 +221,7 @@ h6 {
   text-decoration: none;
   text-align: center;
   margin-top: 5%;
+  font-size: inherit;
 }
 
 /* CONTACT SECTION */
@@ -233,7 +234,7 @@ h6 {
   box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
 }
 
-h2 {
+#contact h2 {
   text-align: center;
   margin-bottom: 5px;
 }
@@ -241,7 +242,7 @@ h2 {
 p {
   /* text-align: center; */
   margin-top: 0;
-  margin-bottom: 20px;
+  /* margin-bottom: 20px; */
   color: #555;
 }
 .contact-info{display: flex;
@@ -329,8 +330,10 @@ textarea {
     text-align: center;
 }
 .contact-details a{text-decoration: none; color: #6f7d93;}
-.contact-details h3{text-align: center;}
-
+#contact h3{text-align: center;}
+.social-links, .contact-details p{
+  padding-top: 5%;
+}
 /* FOOTER SECTION */
 
 footer {
