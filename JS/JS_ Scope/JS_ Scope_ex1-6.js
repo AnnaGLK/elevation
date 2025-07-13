@@ -98,12 +98,13 @@ else {//if false
 
 //  -----------------------Section 6
 
-const isEnough = false
+// const isEnough = false //const cannot be reassigned after its initial value.
+let isEnough = false;
 
 const makeEnough = function () {
     for (let i = 0; i < 10; i++) {
         if (i > 5) {
-            isEnough = true  // turnes isEnough to true if there is more then 6 values
+            isEnough = true  // illegal reassignment with const
         }
     }
 }
