@@ -83,6 +83,6 @@ const alter = function (r, c, v) {
     this.matrix[r][c] = v
 }
 console.log('/-------alter(1, 1, 174)--------/');
-// alter(1, 3, 174)
+// alter(1, 1, 174)
 console.log(alter(1, 1, 174))
 // print(matrix(alter(1, 1, 174)))
