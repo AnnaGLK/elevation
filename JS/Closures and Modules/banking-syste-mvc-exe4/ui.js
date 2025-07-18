@@ -11,6 +11,7 @@ function displayMenu(){
 
 function getMenuChoice(){
     // loop until input num between 1-4
+    const choise = g
     const input = prompt("Choose option (1-4): ");
     return input;
 }
