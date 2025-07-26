@@ -1,0 +1,13 @@
+input {
+  padding: 5px;
+  margin: 5px 2px;
+}
+
+#posts-container {
+  margin-top: 10px;
+  font-family: Arial, sans-serif;
+}
+
+strong {
+  font-weight: bold;
+}
