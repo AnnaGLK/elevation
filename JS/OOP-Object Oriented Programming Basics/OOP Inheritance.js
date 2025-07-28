@@ -16,7 +16,6 @@ class Student extends Person {
   constructor(name, startYear) {
     super(name, startYear);
     this.grades = [];
-   
   }
 
   receiveGrade(courseName, finalGrade) {
@@ -32,7 +31,6 @@ class Student extends Person {
       super.addCourse(course);
     }
   }
-  
 }
 
 // Teacher class which also inherits from Person
@@ -68,7 +66,7 @@ class Principal extends Person {
   constructor(name, startYear) {
     super(name, startYear);
     this.teachers = [];
-     this.students =[];
+    this.students = [];
   }
 
   receiveGrade(courseName, finalGrade) {
@@ -83,12 +81,12 @@ class Principal extends Person {
     console.log(`${this.name} just hired ${teacher.name}`);
   }
 
-  recruitStudent(student){
+  recruitStudent(student) {
     this.students.push(student);
   }
 
-   expelStudent(student) {
-    const index = this.students.findIndex(s => s.name === student.name);
+  expelStudent(student) {
+    const index = this.students.findIndex((s) => s.name === student.name);
     if (index !== -1) {
       this.students.splice(index, 1);
       console.log(`${this.name} just expelled ${student.name}`);
@@ -97,8 +95,8 @@ class Principal extends Person {
     }
   }
 
-    transferStudent(student, receivingPrincipal) {
-    const index = this.students.findIndex(s => s.name === student.name);
+  transferStudent(student, receivingPrincipal) {
+    const index = this.students.findIndex((s) => s.name === student.name);
     if (index !== -1) {
       this.students.splice(index, 1);
       receivingPrincipal.students.push(student);
@@ -141,28 +139,28 @@ const teacher = new Teacher("Jones", 2015, 50000);
 
 principal.hireTeacher(teacher);
 
-const p1 = new Principal("Martin", 1991)
-const p2 = new Principal("Martha", 1990)
-const t2 = new Teacher("Kevin", 2006, 30000)
-const s2 = new Student("Byron", 2016)
+const p1 = new Principal("Martin", 1991);
+const p2 = new Principal("Martha", 1990);
+const t2 = new Teacher("Kevin", 2006, 30000);
+const s2 = new Student("Byron", 2016);
 
 //1 & 2
-p1.hireTeacher(t1) //should print "Martin just hired Cassandra"
-console.log(p1.teachers) //should print Array(1) [Teacher] - the teacher should be Cassandra
+p1.hireTeacher(t1); //should print "Martin just hired Cassandra"
+console.log(p1.teachers); //should print Array(1) [Teacher] - the teacher should be Cassandra
 
-p1.hireTeacher(t2) //should print "Martin just hired Kevin"
-console.log(p1.teachers) //should print Array(2) [Teacher, Teacher]
+p1.hireTeacher(t2); //should print "Martin just hired Kevin"
+console.log(p1.teachers); //should print Array(2) [Teacher, Teacher]
 
 //3 & 4
-p1.recruitStudent(s1)
-p1.recruitStudent(s2)
-console.log(p1.students) //should print Array(2) [Student, Student]
+p1.recruitStudent(s1);
+p1.recruitStudent(s2);
+console.log(p1.students); //should print Array(2) [Student, Student]
 
 //5
-p1.expelStudent(s1)
-console.log(p1.students) //should print Array(1) [Student] - the student should be Byron
+p1.expelStudent(s1);
+console.log(p1.students); //should print Array(1) [Student] - the student should be Byron
 
 //6
-p1.transferStudent(s2, p2)
-console.log(p1.students) //should print Array(0) []
-console.log(p2.students) //should print Array(1) [Student] - the student should be Byron
+p1.transferStudent(s2, p2);
+console.log(p1.students); //should print Array(0) []
+console.log(p2.students); //should print Array(1) [Student] - the student should be Byron
