@@ -1,11 +1,11 @@
-fetch(`https://official-joke-api.appspot.com/random_joke`)
-.then((data) => data.json())
-.then((data) => {
-    console.log(data)
-document.getElementById("setup").innerHTML = data.setup
-document.getElementById("punchLine").innerHTML = data.punchLine
-})
-.catch((err) => console.error(err));
+// fetch(`https://official-joke-api.appspot.com/random_joke`)
+// .then((data) => data.json())
+// .then((data) => {
+//     console.log(data)
+// document.getElementById("setup").innerHTML = data.setup
+// document.getElementById("punchLine").innerHTML = data.punchLine
+// })
+// .catch((err) => console.error(err));
 
 document.getElementById("new-joke-btn").addEventListener("click", () => {
   fetch("https://official-joke-api.appspot.com/random_joke")
