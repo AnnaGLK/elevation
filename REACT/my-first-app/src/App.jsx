@@ -27,12 +27,7 @@ function App() {
 
     </>
   )
-  // Spot-check 3
-  // return [
-  //   getMorningGreeting(),
-  //   getEveningGreeting(),
-  //   <p>some text</p>
-  // ]
+
 }
 
 export default App
