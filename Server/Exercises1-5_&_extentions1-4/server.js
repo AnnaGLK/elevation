@@ -6,7 +6,7 @@ app.use(express.urlencoded({ extended: true }));
 
 function normalizeWord(word) {
   return word
-    .toLowerCase()          // ignore case
+    .toLowerCase()            // ignore case
     .replace(/[^a-z]/g, ""); // keep only letters a–z
 }
 
